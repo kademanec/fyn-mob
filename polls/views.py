@@ -46,7 +46,7 @@ def edit_pricingModule(request, pk):
     }
     return render(request, 'admin/edit.html', context)
 
-def delete_pricingModule(request, pk):
+def delete_pricingModule(self,request, pk):
     pricingConfig = PricingConfig.objects.get(id=pk)
 
     if request.method == 'POST':

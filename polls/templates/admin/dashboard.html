@@ -22,9 +22,11 @@
                     <th scope="row">{{ p.distanceBasePrice }}</th>
                     <td>{{ p.distanceAdditionalPrice }}</td>
                     <td>{{ p.timeMultiplierFactor }}</td>
+                    <td>{{ p.distance }}</td>
+                    <td>{{ p.result}}</td>
                     <td>
-                        <a style="margin-right: 30px;" href="{% url 'edit-pricingModule' p.id %}">Edit</a>
-                        <a href="{% url 'delete-pricingModule' p.id %}">Remove</a>
+                        <a style="margin-right: 30px;" href="{% url 'edit-pricingModule' %}">Edit</a>
+                        <a href="{% url 'delete-pricingModule' %}">Remove</a>
                     </td>
                 </tr>
             {% endfor %}
